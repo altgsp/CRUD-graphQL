@@ -2,15 +2,16 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 const {graphqlHTTP} = require('express-graphql');
-const {setupDB} = require('./config/databaseConnection')
+// const { setupDB } = require('./config/databaseConnection');
 
+// setupDB ( v => console.log(v));
 const schema = {
     // adc depois
 }
 
 app.use(cors());
 app.use(
-    'graphql',
+    '/graphql',
     graphqlHTTP({
         schema,
         graphql: true,
@@ -18,5 +19,5 @@ app.use(
     })
 );
 
-app.listen(400);
+app.listen(4000);
 console.log('SERVER OK');
