@@ -1,4 +1,4 @@
-// conectando ao banco de dados e expondo operações CRUD nas entradas do banco.
+// conectando ao banco de dados e expondo operações CRUD nas entradas do banco. 
 
 class MongodbRepo {
     constructor(collectionName) {
