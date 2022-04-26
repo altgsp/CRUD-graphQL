@@ -6,6 +6,7 @@ const CreateNoteMutation = {
         content: { type: GraphQLString }
     },
     resolve: async (_, {content}) => {
+        // classe de serviço para abstrair consultas mongodb
         const noteService = new NoteService();
         const newNote = await noteService.createNote({ content });
 
