@@ -3,7 +3,7 @@ import environment from '../../../../environment';
 
 const mutation = graphql`
     mutation deleteNoteMutation($_id: ID) {
-        deleteNote(_id $_id)
+        deleteNote(_id: $_id)
     }
 `;
 
